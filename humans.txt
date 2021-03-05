@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Designer/Developer: Latino NET Online
+    https://www.papayatemplates.com
+    @pac09
+    pco07@hotmail.com
+
+# THANKS
+
+    Lautaro Carro
+    Jorge Levy
+    Luis Beltran
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Javascript
+    Normalize.css, Sass, Pear
