@@ -32,6 +32,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="js/manage-landing-functionality.js" type="text/javascript"></script>
+
+      <!-- libraries -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+      <script src="js/tweetjs.js"></script>
     </head>
     
     <body class="has-animations" style="background: rgb(246,251,254); background: linear-gradient(0deg, rgba(246,251,254,1) 0%, rgba(230,244,253,1) 25%, rgba(210,236,251,1) 50%, rgba(172,221,251,1) 75%, rgba(157,214,245,1) 100%);">
@@ -51,12 +55,12 @@
             <section class="row info-section">
               <div class="col-sm-12 col-md-12 offset-xl-2 col-xl-8 text-center">
                 <h1 id="evento" class="font-weight-bold text-center">El Futuro esta en la Nube</h2>
-                <p class="text-justify"><strong>#GlobalAzureLatam</strong> es un evento internacional en línea co-organizado por Latino .NET Online y la Comunidad Xamarin en Español. Es un evento organizado por personas de varios países de habla hispana, nos sentimos orgullosos de compartir el mismo idios y gustos muy  similares en lo que a tecnología se refiere. Van participar expertos y miembros de la comunidades de Latinoamérica, se ofrecen charlas de diversas tecnologías para varias disciplinas como: desarrollo web, desarrollo de aplicaciones móviles, desarrollodesktop, inteligencia artificial, etc.</p>
+                <p class="text-justify"><strong>#GlobalAzureLatam</strong> es un evento internacional en línea co-organizado por líderes de varias comunidades tecnológicas ubicadas en Latinoamérica, nos sentimos orgullosos de compartir el mismo idioma y gustos muy similares en lo que a tecnología se refiere. Van participar expertos y miembros de la región, se ofrecen charlas enfocadas en las diversas áreas de Azure y el cómputo en la nube para varias disciplinas como: desarrollo web, inteligencia artificial, DevOps, seguridad, infraestructura y mucho más.</p>
                 <br />
-                <p class="text-justify">El evento será transmitido de manera online el <strong><em>15, 16 y 17 de Abril</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Somos parte del evento <a href="https://globalazure.net/" target="_blank">Global Azure Latam</a>, buscamos difundir y generar conocimiento en nuestro bello idoma español.</p>
+                <p class="text-justify">El evento será transmitido de manera online el <strong><em>15, 16 y 17 de Abril</em></strong> para toda Latinoamérica y el mundo por diferentes canales de las comunidades organizadoras (YouTube, Twitch, Facebook, etc...). Somos parte del evento <a href="https://globalazure.net/" target="_blank">Global Azure</a> y buscamos difundir y generar conocimiento en nuestro bello idioma español.</p>
                 <br />
-                <p class="text-justify">Siguenos en redes sociales <a href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid" src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam" target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>                
-                
+                <!--<p class="text-justify">Síguenos en redes sociales <a href="https://www.facebook.com/NetConf-Latam-112807460502694/" target="_blank"><img class="img-fluid" src="img/Facebook.svg" alt="Facebook page"></a><a href="https://twitter.com/netConfLatam" target="_blank"><img class="img-fluid" src="img/Twitter.svg" alt="Follow us on Twitter"></a></p>                
+                -->
                 <article class="text-center">
                   <div id="countdownCounter">
                     <div>
@@ -77,7 +81,7 @@
                     </div>
                   </div>
                   <br />
-                  <a href="https://ti.to/comunidad-xamarin-en-espanol/net-conf-latinoamerica-2020" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
+                  <a href="https://ti.to/comunidad-xamarin-en-espanol/global-azure-latinoamerica-2021" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-dotnet">Registrate</button></a>
                 </article>
               </div>
               
@@ -117,152 +121,7 @@
 
                 <h1 id="agenda" class="call-for-speakers text-center">Agenda</h1>
 
-                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 1 &#126; 15 de Abril</h2>
-
-                <table class="table table-striped">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">Horario (UTC)</th>
-                      <th scope="col">Speaker</th>
-                      <th scope="col">Webinar</th>
-                      <th scope="col">País</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>00:00 - 01:00</td>
-                      <td>Jorge Levy<br/>Lautaro Carro<br/>Luis Beltrán</td>
-                      <td>Keynote: Lo nuevo en Azure</td>
-                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /> <img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
-                    </tr>
-                    <tr>
-                      <td>01:00 - 01:45</td>
-                      <td>Luis Eduardo Oquendo Pérez</td>
-                      <td>Microservicios con Docker y .NET Core</td>
-                      <td><img class="emoji-flag" src="img/Flags/co.png" alt="co flag" title="Colombia"/></td>
-                    </tr>
-                    <tr>
-                      <td>01:50 - 02:35</td>
-                      <td>Speaker #3</td>
-                      <td>Sesion #3</td>
-                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
-                    </tr>
-                    <tr>
-                      <td>02:40 - 03:25</td>
-                      <td>Speaker #4</td>
-                      <td>Sesion #4</td>
-                      <td><img class="emoji-flag" src="img/Flags/uy.png" alt="uy flag" title="Uruguay" /></td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 2 &#126; 16 de Abril</h2>
-                
-                <table class="table table-striped">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">Horario (UTC)</th>
-                      <th scope="col">Speaker</th>
-                      <th scope="col">Webinar</th>
-                      <th scope="col">Pais</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>00:00 - 01:00</td>
-                      <td>Speaker #1</td>
-                      <td>Sesion #1</td>
-                      <td><img class="emoji-flag" src="img/Flags/pe.png" alt="pe flag" title="Perú" /></td>
-                    </tr>
-                    <tr>
-                      <td>01:00 - 01:45</td>
-                      <td>Speaker #2</td>
-                      <td>Sesion #2</td>
-                      <td><img class="emoji-flag" src="img/Flags/py.png" alt="py flag" title="Paraguay" /></td>
-                    </tr>
-                    <tr>
-                      <td>01:50 - 02:35</td>
-                      <td>Speaker #3</td>
-                      <td>Sesion #3</td>
-                      <td><img class="emoji-flag" src="img/Flags/rd.png" alt="rd flag" title="República Dominicana" /></td>
-                    </tr>
-                    <tr>
-                      <td>02:40 - 03:25</td>
-                      <td>Speaker #4</td>
-                      <td>Sesion #4</td>
-                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /></td>
-                    </tr>
-                  </tbody>
-                </table>
-              
-                <h2 class="text-subtitle text-agenda font-weight-bold text-center">Día 3 &#126; 17 de Abril</h2>
-                
-                <table class="table table-striped">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">Horario (UTC)</th>
-                      <th scope="col">Speaker</th>
-                      <th scope="col">Webinar</th>
-                      <th scope="col">Pais</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>14:00 - 15:00</td>
-                      <td>Speaker #1</td>
-                      <td>Sesion #1</td>
-                      <td><img class="emoji-flag" src="img/Flags/cr.png" alt="cr flag" title="Costa Rica"/></td>
-                    </tr>
-                    <tr>
-                      <td>15:00 - 16:00</td>
-                      <td>Speaker #2</td>
-                      <td>Sesion #2</td>
-                      <td><img class="emoji-flag" src="img/Flags/gt.png" alt="gt flag" title="Guatemala"/></td>
-                    </tr>
-                    <tr>
-                      <td>16:00 - 17:00</td>
-                      <td>Speaker #3</td>
-                      <td>Sesion #3</td>
-                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /></td>
-                    </tr>
-                    <tr>
-                      <td>17:00 - 18:00</td>
-                      <td>Speaker #4</td>
-                      <td>Sesion #4</td>
-                      <td><img class="emoji-flag" src="img/Flags/ni.png" alt="ni flag" title="Nicaragua" /></td>
-                    </tr>
-                    <tr>
-                      <td>18:00 - 19:00</td>
-                      <td>Speaker #5</td>
-                      <td>Sesion #5</td>
-                      <td><img class="emoji-flag" src="img/Flags/ec.png" alt="ec flag" title="Ecuador" /></td>
-                    </tr>
-                    <tr>
-                      <td>19:00 - 20:30</td>
-                      <td>Speaker #6</td>
-                      <td>Sesion #6</td>
-                      <td><img class="emoji-flag" src="img/Flags/pa.png" alt="pa flag" title="Panama" /></td>
-                    </tr>
-                    <tr>
-                      <td>20:30 - 21:30</td>
-                      <td>Speaker #7</td>
-                      <td>Sesion #7</td>
-                      <td><img class="emoji-flag" src="img/Flags/co.png" alt="co flag" title="Colombia" /> </td>
-                    </tr>
-                    <tr>
-                      <td>21:30 - 22:30</td>
-                      <td>Speaker #8</td>
-                      <td>Sesion #8</td>
-                      <td><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /> </td>
-                    </tr>
-                    <tr>
-                      <td>22:30 - 23:00</td>
-                      <td>Organizadores del Evento</td>
-                      <td>Clausura del Evento</td>
-                      <td><img class="emoji-flag" src="img/Flags/ar.png" alt="ar flag" title="Argentina" /> <br/><img class="emoji-flag" src="img/Flags/mx.png" alt="mx flag" title="Mexico" /> <br/><img class="emoji-flag" src="img/Flags/ni.png" alt="ni flag" title="Nicaragua" /></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <script type="text/javascript" src="https://sessionize.com/api/v2/npiebg3a/view/GridSmart"></script>
 
                 <br />
                 <br />
@@ -275,7 +134,29 @@
                 <br />
                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNetConf-Latam-112807460502694&tabs=timeline&width=600&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1490801261133993" width="500" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 &emsp;&emsp;
-                <a class="twitter-timeline" data-width="500" data-height="800" href="https://twitter.com/netConfLatam?ref_src=twsrc%5Etfw">Tweets by netConfLatam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              
+              <script type="text/template" id="tplItem">
+                <div class="list-group">
+                    {{#statuses}}
+                    <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="list-group-item" target="_blank">
+                        <img src="{{user.profile_image_url_https}}" style="border-radius: 50%;"> <b>{{user.name}}</b>&nbsp;&nbsp;<small><span style="color:gray">@{{user.screen_name}}</span></small>
+                        ·
+                        <small><span style="color:#C0C0C0">{{created_at}}</span></small>
+                        <br/>
+                        <small><span style="color:black">{{text}}</span></small>
+                        <br/>
+                    </a>
+                    {{/statuses}}
+                </div>
+              </script>
+              <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 text-center">
+                <br/>
+                <a class="badge badge-primary" href="https://twitter.com/search?q=globalazurelatam&f=live">#GlobalAzureLatam Tweets</a> 
+                <br/><br/>
+              </div>
+
+              <div class="col-md-4" style="margin: auto;" id="divResults">
               </div>
             </section>
                         
@@ -286,14 +167,14 @@
                 <br />
 
                 <div class="row cards-container">
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-1 col-xl-4 flipper">
+                  <div class="col-sm-12 col-md-4 flipper">
                     <div class="card">
                       <section class="front">
                         <div class="card-header text-center">
                           <strong>Comunidad Xamarin en Espa&#241;ol</strong>
                         </div>
                         <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo" src="img/Xamarin_Esp.png" alt="Xamarin Esp">
+                          <img class="organizer-logo" src="img/Comunidades/comunidadxamarin.png" alt="Comunidad Xamarin en Español">
                         </div>
                       </section>
                       <section class="back">
@@ -307,14 +188,14 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-2 col-xl-4 flipper">
+                  <div class="col-sm-12 col-md-4 flipper">
                     <div class="card">
                       <section class="front">
                         <div class="card-header text-center">
                           <strong>Latino NET Online</strong>
                         </div>
                         <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo" src="img/latinonetlogo.png" alt="Latino net">
+                          <img class="organizer-logo" src="img/Comunidades/latinonet.png" alt="Latino net">
                         </div>
                       </section>
                       <section class="back">
@@ -322,79 +203,356 @@
                           <strong>Latino NET Online</strong>
                         </div>
                         <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/" target="_blank">America Latina</a>, estamos conformados por miembros de varias comunidades .NET. Realizamos webinars cada sabado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor.</p>
+                          <p class="text-justify">Somos la comunidad virtual de .NET para <a href="https://latinonet.online/" target="_blank">América Latina</a>, estamos conformados por miembros de varias comunidades .NET. Realizamos webinars cada sábado, abordamos las tecnologías .NET y todo el ecosistema a su alrededor</p>
                         </div>
                       </section>
                     </div>
                   </div>
 
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/aspnetmvc.png" alt="Comunidad Asp.Net MVC (Español)">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify"><a href="https://www.facebook.com/groups/aspmvc.es/about/" target="_blank">Comunidad virtual</a> en espa&#241;ol de aprendizaje y compartimiento de experiencias y conocimientos sobre el mundo de desarrollo web con tecnologías Microsoft. Creada inicialmente con enfoque en ASP.NET MVC</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
                 </div>
                 
+                <br />
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Students Ambassadors La Paz</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/studentambassadorslapaz.png" alt="Students Ambassadors La Paz">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Students Ambassadors La Paz</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Somos <a href="https://www.facebook.com/StudentAmbassadorLaPaz" target="_blank">parte de la comunidad</a> global de estudiantes técnicos e informáticos que utilizan la tecnología de Microsoft para mejorar el mundo.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>MUG Perú</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/mugperu.png" alt="MUG Perú" style="max-width: 75%; background-color: black;">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>MUG Perú</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">La <a href="https://www.meetup.com/es/msperu/" target="_blank">comunidad</a> se enfoca en el aprendizaje y el intercambio de información sobre el movimiento Microsoft (Infraestructura,DevOps, Dev, Cloud, DBA) & Open Source en Azure - cultura, prácticas y herramientas.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>PointColl Com</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/pointcoll.jpg" alt="PointColl Com">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>PointColl Com</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Somos <a href="https://pointcoll.com/" target="_blank">un grupo de entusiastas</a> que hacemos posibles espacios de comunidad. Buscamos promover el uso, adopción y apropiación de herramientas de colaboración y productividad</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Comunidad AI</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/comunidadai.png" alt="Comunidad AI">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Comunidad AI</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">La <a href="http://comunidadai.org/" target="_blank">Inteligencia Artificial</a> en compañía del Machine Learning está revolucionando el presente y promete ser un impulsor vital del futuro gracias a sus alcances. Somos un espacio para aprender sobre IA y Machine Learning.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Cloud Experts Community</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/cloudexperts.jpeg" alt="Cloud Experts Community">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Cloud Experts Community</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Este grupo es para la <a href="https://www.meetup.com/cloudexpertsc/" target="_blank">comunidad de entusiastas y profesionales</a> de SQL Server, plataforma de datos y tecnologías de Microsoft.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Avanet</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/avanet.png" alt="Avanet">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Avanet</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Una <a href="https://avanet.org/" target="_blank">comunidad de entusiastas </a> de la tecnología y del compartir conocimiento que ha realizado esta labor durante los últimos 10 años en la ciudad de Medellín.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>.NET Bolivia</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/netbolivia.png" alt=".NET Bolivia">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>.NET Bolivia</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Este es <a href="https://www.meetup.com/es/Cochabamba-NET-Developers/" target="_blank">un grupo para todos los interesados</a> en aprender y compartir conocimiento y experiencias relacionadas al desarrollo .NET en todas sus variedades.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Secretos Blazor</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/secretosblazor.png" alt="Secretos Blazor">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Secretos Blazor</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Comunidad de <a href="https://www.facebook.com/groups/secretosblazor" target="_blank">Blazor en Español</a>, dedicada a compartir información sobre esta maravillosa tecnología.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Aprendiendo Azure</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/aprendiendoazure.png" alt="Aprendiendo Azure">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Aprendiendo Azure</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Un <a href="https://www.facebook.com/groups/AprendiendoAzure" target="_blank">grupo de estudio de Azure</a>, el cual tiene por finalidad contribuir al aprendizaje de esta plataforma de cómputo en la nube, compartir información sobre cursos, preguntas, eventos y todo lo que aporte.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Secretos Xamarin</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/secretosxamarin.png" alt="Secretos Xamarin">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Secretos Xamarin</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify"><a href="https://www.facebook.com/groups/xamarinenespanol/" target="_blank">Comunidad virtual</a> en espa&#241;ol de desarrolladores Xamarin. Nuestra misión: Volvernos mejores desarrolladores con Xamarin, con el fin de que podamos prosperar, ayudando a otros.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Conosur Tech</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/conosurtech.png" alt="Conosur Tech" style="width: 75%;">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Conosur Tech</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Una <a href="https://conosur.tech/" target="_blank">iniciativa para conectar</a> a personas y organizaciones de habla-hispana relacionadas a la tecnología. Nuestros contenidos incluyen publicaciones, videos, eventos, diplomados y otras actividades a las cuales se puede acceder en la mayoría de los casos sin costo.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Somos Lulo TV</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/somoslulotv.png" alt="Somos Lulo TV">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Somos Lulo TV</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Una <a href="https://www.youtube.com/channel/UCM3T707ciQb6672dvWfbfsA " target="_blank">iniciativa Colombiana</a> que busca compartir conocimiento a la comunidad en cortos y prácticos videos.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <br />
+
+                <div class="row cards-container">
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>.NET Nicaragua</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/netnicaragua.jpeg" alt=".NET Nicaragua">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>.NET Nicaragua</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Somos <a href="https://www.meetup.com/DotNetNicaragua/" target="_blank">una comunidad</a> abierta a todos los desarrolladores interesados en aprender y compartir sus conocimientos sobre las tecnologías Microsoft .NET. Adoptamos la filosofía de código abierto al promover la participación de la comunidad.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>                  
+
+                  <div class="col-sm-12 col-md-4 flipper">
+                    <div class="card">
+                      <section class="front">
+                        <div class="card-header text-center">
+                          <strong>Puebla .NET</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <img class="organizer-logo" src="img/Comunidades/pueblanet.png" alt="Puebla .NET">
+                        </div>
+                      </section>
+                      <section class="back">
+                        <div class="card-header text-center">
+                          <strong>Puebla .NET</strong>
+                        </div>
+                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                          <p class="text-justify">Un <a href="https://www.facebook.com/puebla.net" target="_blank">sitio de encuentro</a> para quienes desarrollan con tecnología Microsoft .NET.</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>                  
+                </div>
+
               </div>
             </section>
             
-            <br />
-            <br />
-            <br />
-
-            <section class="row">
-              <div class="col-sm-12 offset-md-2 col-md-8">
-                <hr />
-                <h2 id="colaborators" class="text-subtitle font-weight-bold text-center">COLABORADORES</h2>
-                <br />
-
-                <div class="row cards-container colab-cards-container">
-
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-1 col-xl-4 flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo" src="img/asp_dotnet_esp.png" alt="dotnet Esp">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Asp.Net MVC (Espa&#241;ol)</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">
-                            <a href="https://www.facebook.com/groups/aspmvc.es/about/" target="_blank">Comunidad virtual</a> en espa&#241;ol de aprendizaje y compartimiento de experiencias y conocimientos sobre el mundo de desarrollo web con tecnologías Microsoft. Creada inicialmente con enfoque en ASP.NET MVC
-                          </p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-5 offset-xl-2 col-xl-4 flipper">
-                    <div class="card">
-                      <section class="front">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Secretos Xamarin</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <img class="organizer-logo" src="img/blazorlogo.png" alt="Secretos Xamarin">
-                        </div>
-                      </section>
-                      <section class="back">
-                        <div class="card-header colab-card-header text-center">
-                          <strong>Comunidad Secretos Xamarin</strong>
-                        </div>
-                        <div class="card-body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                          <p class="text-justify">
-                            <a href="https://www.facebook.com/groups/xamarinenespanol/" target="_blank">Comunidad virtual</a> en espa&#241;ol de desarrolladores Xamarin. Nuestra misión: Volvernos mejores desarrolladores con Xamarin, con el fin de que podamos prosperar, ayudando a otros.
-                          </p>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-
             <br />
             <br />
             <br />
@@ -431,25 +589,6 @@
                   <div class="col-sm-12 col-md-4 v-flipper">
                     <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
-                            <div class="header-front text-center"><strong>.NET Foundation</strong></div>
-                        </div>
-                        <div class="card-content">
-                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/1200px-.NET_Foundation_Logo.svg.png" alt="DotNet Foundation" style="max-width: 50%;" />
-                        </div>
-                    </div>
-                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
-                            <div class="header-back text-center"><strong>.NET Foundation</strong></div>
-                        </div>
-                        <div class="card-content">
-                            <p><a href="https://dotnetfoundation.org/" target="_blank">Organización</a> incorporada por Microsoft en 2014, para mejorar el desarrollo de software de código abierto y la colaboración en torno a .NET Framework. Su cuantioso apoyo al evento radica en "Streamming Support" por medio del canal de YouTube de la .NET Foundation.</p>
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-12 col-md-4 v-flipper">
-                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
-                        <div class="card-image">
                             <div class="header-front text-center"><strong>JetBrains</strong></div>
                         </div>
                         <div class="card-content text-center">
@@ -470,6 +609,28 @@
                   <div class="col-sm-12 col-md-4 v-flipper">
                     <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
+                            <div class="header-front text-center"><strong>Microsoft</strong></div>
+                        </div>
+                        <div class="card-content">
+                          <br />
+                          <br />
+                          <img class="img-fluid sponsor-logo-img" src="img/Sponsors/microsoft.png" alt="Microsoft" />
+                        </div>
+                    </div>
+                    <div class="back-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                        <div class="card-image">
+                            <div class="header-back text-center"><strong>.NET Foundation</strong></div>
+                        </div>
+                        <div class="card-content">
+                            <p><a href="https://www.microsoft.com/" target="_blank">Una empresa</a> con la misión de empoderar a los demás, capacitando a todas las personas y organizaciones del planeta para que puedan lograr más. Su cuantioso apoyo al evento radica en "vouchers de certificación" con el reto <a href="https://docs.microsoft.com/learn/challenges?id=35cf4e22-feea-4003-9f73-a245ef648ecf" target="_blank"> Cloud Skills Challenge </a> del evento</p>
+                        </div>
+                    </div>
+                  </div>
+
+<!--
+                  <div class="col-sm-12 col-md-4 v-flipper">
+                    <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
+                        <div class="card-image">
                             <div class="header-front text-center"><strong>El Camino Dev</strong></div>
                         </div>
                         <div class="card-content">
@@ -485,7 +646,8 @@
                         </div>
                     </div>
                   </div>
-
+-->
+<!--
                   <div class="col-sm-12 col-md-4 v-flipper">
                     <div class="front-card v-card" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click para más info">
                         <div class="card-image">
@@ -506,7 +668,7 @@
                         </div>
                     </div>
                   </div>
-
+-->
                 </div>
               </div>
             </section>

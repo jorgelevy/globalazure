@@ -5,7 +5,6 @@ $(document).ready(function() {
         $('[data-toggle="popover"]').popover();
     });
 
-
     $(".flipper").click(function() {
         var target = $( event.target );
 
@@ -24,7 +23,7 @@ $(document).ready(function() {
     });
 
     //Set the date we're counting down to
-    var utcCountDownDate = new Date("04/16/2021 00:00:00 UTC");
+    var utcCountDownDate = new Date("04/15/2021 21:00:00 UTC");
     var localCountDownDate = utcCountDownDate.toLocaleString();
     const countDownDate = new Date(localCountDownDate).getTime();
 
@@ -59,4 +58,13 @@ $(document).ready(function() {
         }
     }, 1000);
 
+    var Query = "globalazurelatam";
+
+    TweetJs.Search(Query,
+      function(data) {
+          var tpl = $("#tplItem").html();
+          data.statuses.forEach(item => item.created_at = item.created_at.substring(4,10));
+          var strHtml = Mustache.render(tpl, data);
+          $("#divResults").html(strHtml);
+      });
 });
