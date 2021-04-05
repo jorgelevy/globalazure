@@ -24,8 +24,7 @@ $(document).ready(function() {
 
     //Set the date we're counting down to
     var utcCountDownDate = new Date("04/15/2021 21:00:00 UTC");
-    var localCountDownDate = utcCountDownDate.toLocaleString();
-    const countDownDate = new Date(localCountDownDate).getTime();
+    const countDownDate = utcCountDownDate.getTime();
 
     //Update the count down every 1 second
     var run = setInterval(function() {
@@ -34,7 +33,6 @@ $(document).ready(function() {
         
         // Find the distance between now and the count down date
         var distance = countDownDate - now;
-        
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
