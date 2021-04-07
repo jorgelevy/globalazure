@@ -78,9 +78,9 @@ function convertEnglishDatesToSpanish() {
     tabs[2].firstElementChild.innerHTML = "Sábado";
 
     let titles = document.getElementsByClassName("sz-day__title");
-    titles[0].innerHTML = "Jueves 15 de Abril";
-    titles[1].innerHTML = "Viernes 16 de Abril";
-    titles[2].innerHTML = "Sábado 17 de Abril";
+    titles[0].innerHTML = "Jueves 15 de Abril del 2021";
+    titles[1].innerHTML = "Viernes 16 de Abril del 2021";
+    titles[2].innerHTML = "Sábado 17 de Abril del 2021";
   });
 }
 
