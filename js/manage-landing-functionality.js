@@ -23,7 +23,7 @@ $(document).ready(function () {
   });
 
   //Set the date we're counting down to
-  var utcCountDownDate = new Date("04/15/2021 21:00:00 UTC");
+  var utcCountDownDate = new Date("05/12/2023 21:30:00 UTC");
   const countDownDate = utcCountDownDate.getTime();
 
   //Update the count down every 1 second
@@ -73,14 +73,12 @@ function convertEnglishDatesToSpanish() {
 
   waitForElement("#sessionize > ul > li.sz-tabs__item > a[data-sztz-l='Thursday']", function () {
     let tabs = document.getElementsByClassName("sz-tabs__item");
-    tabs[0].firstElementChild.innerHTML = "Jueves";
-    tabs[1].firstElementChild.innerHTML = "Viernes";
-    tabs[2].firstElementChild.innerHTML = "Sábado";
+    tabs[0].firstElementChild.innerHTML = "Viernes";
+    tabs[1].firstElementChild.innerHTML = "Sabado";
 
     let titles = document.getElementsByClassName("sz-day__title");
-    titles[0].innerHTML = "Jueves 15 de Abril del 2021";
-    titles[1].innerHTML = "Viernes 16 de Abril del 2021";
-    titles[2].innerHTML = "Sábado 17 de Abril del 2021";
+    titles[0].innerHTML = "Viernes 12 de Mayo del 2023";
+    titles[1].innerHTML = "Sabado 13 de Mayo del 2023";
   });
 }
 

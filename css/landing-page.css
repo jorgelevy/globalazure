@@ -1,13 +1,10 @@
-html {
-    position: relative;
-    min-height: 100%;
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
 }
 
-body {
-    background-color: #57565f;;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    /* Margin bottom by footer height */
-    margin-bottom: 15em;
+.header-img-container{
+  margin-top: -8em;
 }
 
 h1 {
@@ -100,15 +97,6 @@ hr {
   padding: 3em 0;
 }
 
-.parallax-window {
-  min-height: 600px;
-  background: transparent;
-}
-
-.parallax-row{
-  background-color: #000000;
-}
-
 .light-grey-row {
   background-color: #fafafb;
 }
@@ -118,84 +106,16 @@ hr {
   padding-top: 5em;
 }
 
-.call-for-speakers-section {
-  margin-top: 4em;
-  text-align: center;
+.call-for-speakers-section{
+  background: #dddcdc;
 }
 
-.logo-call-for-speakers {
-  max-width: 60%;
-}
-
-.table {
-  text-align: center;
-}
-
-.table th {
-  background-color: rgb(152 152 162);
-  border-color: rgb(152 152 162);
+.transmission-item{
+  background: #000e2a;
+  border-color: #ffc107;
   color: #ffffff;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f1f1f1;
-}
-
-.table-striped tbody tr:nth-of-type(even) {
-  background-color: #ffffff;
-}
-
-
-.carousel-container {
-  background-color: #fbfbfb;
-  margin-top: 2em;
-  margin-bottom: 4em;
-}
-
-#multimedia{
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.carousel-item {
-    text-align: center;
-    min-height: 450px;
-}
-
-.flyer-img {
-  width: 100%;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #001344;
-}
-
-.popover {}
-
-.popover-body {
-  background-color: #001344;
-  color: #ffffff;
-}
-
-.popover-header {
-  background-color: #001344;
-}
-
-.arrow {}
-
-.bs-popover-top .arrow::after {
-  border-top-color: #5125ef;
-}
-
-.bs-popover-bottom .arrow::after {
-  border-bottom-color: #5125ef;
-}
 
 #countdownCounter{
   color: #fff;
@@ -208,20 +128,23 @@ hr {
 #countdownCounter > div{
   padding: 10px;
   border-radius: 3px;
-  background: #5e7ef1;
+  background: #ecedf3;
   display: inline-block;
 }
 
 #countdownCounter div > span{
   padding: 15px;
   border-radius: 3px;
-  background: rgb(0, 0, 255);
+  background: #010a1c;
   display: inline-block;
+  font-weight: bold;
 }
 
 .smalltext{
-  padding-top: 5px;
+  color: blue;
   font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
 }
 
 /*-------------------------------------------------- Custom page CSS --------------------------------------------------*/
